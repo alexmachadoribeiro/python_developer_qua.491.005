@@ -52,8 +52,8 @@ Crie um programa em que o usuário pode escolher entre:
 - Inserir um nome em uma lista
 - Exibir a lista de nomes
 - Pesquisar por um nome na lista
-- Alterar item da lista
-- Excluir item da lista
+- Alterar item da lista # TODO
+- Excluir item da lista # TODO
 - Sair do programa
 """
 # NOTE - a lista deve começar vazia.
