@@ -2,21 +2,24 @@ import os
 
 pessoa = {}
 
-pessoa['nome'] = input("Informe o nome: ")
-pessoa['cpf'] = input("Informe o CPF: ")
-pessoa['data de nascimento'] = input("Informe a data de nascimento: ")
-pessoa['e-mail'] = input("Informe o e-mail: ")
-pessoa['gênero'] = input("Informe o gênero: ")
-pessoa['telefone'] = input("Informe o telefone: ")
-pessoa['endereço'] = input("Informe o endereço: ")
-pessoa['altura'] = float(input("Informe a altura: ").replace(",", "."))
-pessoa['peso'] = float(input("Informe o peso: ").replace(",", "."))
-pessoa['tipo sanguíneo'] = input("Informe o tipo sanguíneo: ")
+try:
+    pessoa['nome'] = input("Informe o nome: ")
+    pessoa['cpf'] = input("Informe o CPF: ")
+    pessoa['data de nascimento'] = input("Informe a data de nascimento: ")
+    pessoa['e-mail'] = input("Informe o e-mail: ")
+    pessoa['gênero'] = input("Informe o gênero: ")
+    pessoa['telefone'] = input("Informe o telefone: ")
+    pessoa['endereço'] = input("Informe o endereço: ")
+    pessoa['altura'] = float(input("Informe a altura: ").replace(",", "."))
+    pessoa['peso'] = float(input("Informe o peso: ").replace(",", "."))
+    pessoa['tipo sanguíneo'] = input("Informe o tipo sanguíneo: ")
 
-os.system("cls")
+    os.system("cls")
 
-for chave in pessoa: # type: ignore
-    print(f"{chave.title()}: {pessoa.get(chave)}") # type: ignore
+    for chave in pessoa: # type: ignore
+        print(f"{chave.title()}: {pessoa.get(chave)}") # type: ignore
+except Exception as e:
+    print(f"Não foi possível rodar programa. {e}.")
 
 """
 # TODO - atividade: Crie um programa que receba do usuário os seguintes dados:
