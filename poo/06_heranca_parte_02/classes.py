@@ -1,6 +1,6 @@
 # superclasses
 class Pai:
-    def __init__(self, genero, peso, altura): # type: ignore
+    def __init__(self, genero, peso, altura):
         self.genero = genero
         self.peso = peso
         self.altura = altura
@@ -11,7 +11,7 @@ class Pai:
         print(f"Altura: {self.altura} m")
 
 class Mae:
-    def __init__(self, nome, email, telefone): # type: ignore
+    def __init__(self, nome, email, telefone):
         self.nome = nome
         self.email = email
         self.telefone = telefone
@@ -23,9 +23,9 @@ class Mae:
 
 # subclasse
 class Filho(Pai, Mae):
-    def __init__(self, nome, email, telefone, genero, peso, altura): # type: ignore
-        Mae.__init__(self, nome, email, telefone) # type: ignore
-        Pai.__init__(self, genero, peso, altura) # type: ignore
+    def __init__(self, nome, email, telefone, genero, peso, altura):
+        Mae.__init__(self, nome, email, telefone)
+        Pai.__init__(self, genero, peso, altura)
     
     def exibir_info(self):
         Mae.exibir_info(self)
