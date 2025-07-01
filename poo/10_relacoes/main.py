@@ -60,29 +60,30 @@ if __name__ == "__main__":
                         print(f"Matrícula: {aluno.matricula}")
                         print(f"CPF: {aluno.cpf}")
                         print('-'*40)
-                    inscricao = int(input("Informe a matrícula: "))
-                    for aluno in alunos:
-                        aluno = {
-                            'nome': aluno.nome,
-                            'matricula': aluno.matricula,
-                            'cpf': aluno.cpf
-                        }
-                        if inscricao in aluno['matricula']:
-                            break
-                        else:
-                            ...
+                    # FIXME - Não foi possível matricular aluno no curso. argument of type 'int' is not iterable.
+                    # inscricao = int(input("Informe a matrícula: "))
+                    # for aluno in alunos:
+                    #     aluno = {
+                    #         'nome': aluno.nome,
+                    #         'matricula': aluno.matricula,
+                    #         'cpf': aluno.cpf
+                    #     }
+                    #     if inscricao in aluno['matricula']:
+                    #         break
+                    #     else:
+                    #         ...
 
-                    limpar()
+                    # limpar()
 
-                    print(f"{'-'*10} Lista de cursos {'-'*10}")
-                    for curso in cursos:
-                        print(f"Curso: {curso.nome_curso}")
-                    curso_inscricao = input("Curso desejado: ").strip().title()
+                    # print(f"{'-'*10} Lista de cursos {'-'*10}")
+                    # for curso in cursos:
+                    #     print(f"Curso: {curso.nome_curso}")
+                    # curso_inscricao = input("Curso desejado: ").strip().title()
 
-                    aluno.inscrever_curso(curso_inscricao)
-                    limpar()
+                    # aluno.inscrever_curso(curso_inscricao)
+                    # limpar()
 
-                    print(f"Aluno {aluno.nome} inscrito no curso {curso.nome_curso} com sucesso.")
+                    # print(f"Aluno {aluno.nome} inscrito no curso {curso.nome_curso} com sucesso.")
                 except Exception as e:
                     print(f"Não foi possível matricular aluno no curso. {e}.")
                 finally:
